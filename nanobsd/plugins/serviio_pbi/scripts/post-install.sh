@@ -66,7 +66,7 @@ sed -i '' -e "22a\\
 JAVA_OPTS=\"\${JAVA_OPTS} -Dserviio.remoteHost=0.0.0.0\"" ${SERVIIO_HOME}/sbin/serviiod
 
 sed -i '' -e "23a\\
-ldconfig -m /usr/pbi/${SERVIIO_HOME}/lib/" ${SERVIIO_HOME}/sbin/jdownloaded
+ldconfig -m /usr/pbi/${SERVIIO_HOME}/lib" ${SERVIIO_HOME}/sbin/jdownloaded
 
 
 sed -i '' -e "s,exec java,exec ${SERVIIO_HOME}/bin/java,g" ${SERVIIO_HOME}/sbin/serviiod
